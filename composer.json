@@ -30,6 +30,8 @@
 
         "doctrine/doctrine-fixtures-bundle": "2.0.1",
         "doctrine/data-fixtures": "1.0.0-ALPHA3",
+        "doctrine/doctrine-migrations-bundle": "1.0.0-beta1",
+        "doctrine/migrations": "1.0-ALPHA1",
         "doctrine/mongodb-odm-bundle": "2.2.1",
         "doctrine/mongodb-odm": "1.0.0-BETA9",
         "doctrine/mongodb": "1.0.3"
