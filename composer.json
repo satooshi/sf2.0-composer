@@ -10,9 +10,9 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.0.23",
-        "doctrine/common": "2.1.4",
-        "doctrine/dbal": "2.1.7",
-        "doctrine/orm": "2.1.7,<2.5-dev",
+        "doctrine/common": "2.2.3",
+        "doctrine/dbal": "2.2.2",
+        "doctrine/orm": "2.2.3",
         "swiftmailer/swiftmailer": "4.2.2",
         "kriswallsmith/assetic": "1.0.4",
         "twig/twig": "1.10.3",
