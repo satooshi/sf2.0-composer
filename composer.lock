@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3a6bb961f67f845632717432d7fc1c82",
+    "hash": "b8c1fc21c3b2b99bcf0767261b6a5358",
     "packages": [
         {
             "name": "doctrine/common",
@@ -727,16 +727,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.10.3",
+            "version": "v1.13.2",
             "source": {
                 "type": "git",
-                "url": "git://github.com/fabpot/Twig.git",
-                "reference": "v1.10.3"
+                "url": "https://github.com/fabpot/Twig.git",
+                "reference": "v1.13.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/zipball/v1.10.3",
-                "reference": "v1.10.3",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.13.2",
+                "reference": "v1.13.2",
                 "shasum": ""
             },
             "require": {
@@ -745,7 +745,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.10-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -755,7 +755,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -772,7 +772,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2012-10-19 03:45:49"
+            "time": "2013-08-03 15:35:31"
         }
     ],
     "packages-dev": [
