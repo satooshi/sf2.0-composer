@@ -24,8 +24,9 @@
         "symfony/assetic-bundle": "2.0.*@dev",
         "symfony/monolog-bundle": "2.0.23",
         "symfony/swiftmailer-bundle": "2.0.23",
-        "jms/security-extra-bundle": "1.0.*",
-        "jms/metadata": "1.1.1"
+        "jms/security-extra-bundle": "1.1.0",
+        "jms/metadata": "1.1.1",
+        "jms/aop-bundle": "1.0.0"
     },
     "extra": {
         "symfony-app-dir": "app",
