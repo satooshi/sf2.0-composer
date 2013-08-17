@@ -1,0 +1,3 @@
+_hello:
+    resource: "@SatooshiHelloBundle/Controller/WelcomeController.php"
+    type:     annotation

@@ -1,0 +1,2 @@
+_satooshi_welcome:
+    resource: "@SatooshiHelloBundle/Resources/config/routing.yml"

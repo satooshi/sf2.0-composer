@@ -1,0 +1,38 @@
+{
+    "name": "symfony/framework-standard-edition",
+    "license": "MIT",
+    "type": "project",
+    "description": "The \"Symfony Standard Edition\" distribution",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.0.23",
+        "doctrine/common": "2.1.4",
+        "doctrine/dbal": "2.1.7",
+        "doctrine/orm": "2.1.7,<2.5-dev",
+        "swiftmailer/swiftmailer": "4.2.2",
+        "kriswallsmith/assetic": "1.0.4",
+        "twig/twig": "1.10.3",
+        "twig/extensions": "1.0.0",
+        "monolog/monolog": "1.2.1",
+        "sensio/framework-extra-bundle": "2.0.23",
+        "sensio/distribution-bundle": "2.0.23",
+        "sensio/generator-bundle": "2.0.23",
+        "symfony/assetic-bundle": "2.0.*@dev",
+        "symfony/monolog-bundle": "2.0.23",
+        "symfony/swiftmailer-bundle": "2.0.23",
+        "jms/security-extra-bundle": "1.0.*",
+        "jms/metadata": "1.1.1"
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
+
