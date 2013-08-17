@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new JMS\AopBundle\JMSAopBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Satooshi\Bundle\HelloBundle\SatooshiHelloBundle(),
+            new Satooshi\Bundle\PersonBundle\SatooshiPersonBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

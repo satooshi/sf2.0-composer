@@ -1,2 +1,5 @@
 _satooshi_welcome:
     resource: "@SatooshiHelloBundle/Resources/config/routing.yml"
+
+_satooshi_person:
+    resource: "@SatooshiPersonBundle/Resources/config/routing.yml"
