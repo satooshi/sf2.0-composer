@@ -23,14 +23,14 @@ class Person
     protected $id;
 
     /**
-     * @ORM\Column(name="name", type="string", length=50)
+     * @ORM\Column(name="name", type="string", length=50, nullable=false)
      *
      * @var string
      */
     protected $name;
 
     /**
-     * @ORM\Column(name="email", type="string", length=50)
+     * @ORM\Column(name="email", type="string", length=50, nullable=false)
      *
      * @var string
      */
