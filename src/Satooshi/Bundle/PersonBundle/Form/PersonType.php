@@ -12,6 +12,8 @@ class PersonType extends AbstractType
         $builder
             ->add('name')
             ->add('email')
+            ->add('isMarried')
+            ->add('friends')
         ;
     }
 
