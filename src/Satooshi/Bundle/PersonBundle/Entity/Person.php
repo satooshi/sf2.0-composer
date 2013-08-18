@@ -44,6 +44,31 @@ class Person
     protected $isMarried = false;
 
     /**
+     * @ORM\ManyToMany(targetEntity="Person")
+     * @ORM\JoinTable(
+     *     name="person_friendship",
+     *     joinColumns={@ORM\JoinColumn(name="person_id", referencedColumnName="id")},
+     *     inverseJoinColumns={@ORM\JoinColumn(name="friend_id", referencedColumnName="id")}
+     * )
+     *
+     * @var \Doctrine\Common\Collections\ArrayCollection
+     */
+    protected $friends;
+
+    /**
+     * Constructor.
+     */
+    public function __construct()
+    {
+        $this->friends = new ArrayCollection();
+    }
+
+    public function __toString()
+    {
+        return sprintf("%s - %s", $this->name, $this->email);
+    }
+
+    /**
      * Return id.
      *
      * @return integer
@@ -123,5 +148,61 @@ class Person
     public function getIsMarried()
     {
         return $this->isMarried;
+    }
+
+    /**
+     * Add friend.
+     *
+     * @param Person $friend
+     *
+     * @return Person
+     */
+    public function addFriend(Person $friend)
+    {
+        $this->friends[] = $friend;
+
+        return $this;
+    }
+
+    /**
+     * Remove friend.
+     *
+     * @param Person $friend
+     *
+     * @return Person
+     */
+    public function removeFriend(Person $friend)
+    {
+        $this->friends->removeElement($friend);
+
+        return $this;
+    }
+
+    /**
+     * Set friends.
+     *
+     * @param array $friends
+     *
+     * @return \Satooshi\Bundle\PersonBundle\Entity\Person
+     */
+    public function setFriends($friends)
+    {
+        $this->friends = new ArrayCollection();
+
+        foreach ($friends as $friend) {
+            $this->addFriend($friend);
+        }
+
+        return $this;
+    }
+
+    /**
+     * Return friends.
+     *
+     * @return \Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getFriends()
+    {
+        return $this->friends;
     }
 }
