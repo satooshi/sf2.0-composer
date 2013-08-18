@@ -37,6 +37,13 @@ class Person
     protected $email;
 
     /**
+     * @ORM\Column(name="is_married", type="boolean", nullable=false)
+     *
+     * @var boolean
+     */
+    protected $isMarried = false;
+
+    /**
      * Return id.
      *
      * @return integer
@@ -92,5 +99,29 @@ class Person
     public function getEmail()
     {
         return $this->email;
+    }
+
+    /**
+     * Set isMarried.
+     *
+     * @param boolean $isMarried
+     *
+     * @return Person
+     */
+    public function setIsMarried($isMarried)
+    {
+        $this->isMarried = $isMarried;
+
+        return $this;
+    }
+
+    /**
+     * Return isMarried.
+     *
+     * @return boolean
+     */
+    public function getIsMarried()
+    {
+        return $this->isMarried;
     }
 }
